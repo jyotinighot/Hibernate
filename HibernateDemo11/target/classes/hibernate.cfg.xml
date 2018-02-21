@@ -9,13 +9,13 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"></property>
         <property name="hibernate.connection.pool_size">1</property>
-       <!-- <property name="hibernate.current_session_context_class">thread</property> -->
+       <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create-drop</property>
       <!-- <mapping resource="employee.hbm.xml" />  -->    
       
-       <mapping class="com.DemoTutorial.scjp.HibernateDemo11.ProductDemo" />
+       <mapping class="com.DemoTutorial.scjp.HibernateDemo11.Employee" />
       <!--   <mapping class="com.DemoTutorial.scjp.HibernateDemo11.B" />
          <mapping class="com.DemoTutorial.scjp.HibernateDemo11.C" /> -->
     </session-factory>
